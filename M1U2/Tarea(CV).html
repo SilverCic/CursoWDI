@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+<body>
+    <h1>Cardozo Ignacio</h1>
+    <hr><br>
+    <img src="img/imagen cv.jpg" width="500" alt="foto mia">
+    <h2>Edad: 25</h2>
+    <h2>Domicilio: B° 31 Viv Paraná Mza B Casa 13</h2> <hr>
+    <h3>Que series me gustan?</h3>
+    <h3>Series</h3>
+    <ul>
+        <li>Breaking Bad</li>
+        <li>Los Simuladores</li>
+        <li>Black Mirror</li>
+        <li>The Boys</li>
+    </ul>
+    <h3>Series Anime</h3>
+    <ul>
+        <li>HunterXHunter</li>
+        <li>Shingeki no Kiojin</li>
+        <li>Bleach</li>
+    </ul>
+    <h3>Que pelis son las que mas me gustaron?</h3>
+    <ul>
+        <li>Shreck 2</li>
+        <li>LiarLiar(mentiroso mentiroso)</li>
+        <li>Gladiator</li>
+        <li>Bohemian Rapsody</li>
+    </ul> <hr>
+    <h3>Perfil</h3> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsa cumque iste et laboriosam incidunt exercitationem praesentium deserunt odit, quas in voluptate repellat nostrum voluptatem illo suscipit eligendi, repudiandae eaque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae pariatur voluptatum animi! Incidunt culpa eum ea natus sed libero ut saepe blanditiis inventore debitis similique, tenetur officiis magnam obcaecati!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vero ipsa voluptas necessitatibus voluptatum numquam explicabo asperiores ipsum aliquam eaque architecto, harum accusamus ullam doloribus fugit ratione. Aperiam, nisi magnam!</p>
+    <h3>Si querés contactarme podes completar el siguiente formulario</h3>
+
+    <!--id lleva al label al clickearlo
+    placeholder muestra en gris un ejemplo de lo que hay que ingresar
+    type es la propiedad que modifica el campo en el que se muestra el input, ej:text, radio, checkbox, email, password, file
+    name es el valor que el servidor reciva-->
+
+    <form action="">
+        <label for="Nombre">Nombre</label>
+        <input id="Nombre" name="Nombre" placeholder="Ignacio..." type="text">
+        <label for="Apellido">Apellido</label>
+        <input id="Apellido" name="Apellido" placeholder="Cardozo..." type="text">
+        <label for="email">email</label>
+        <input id="email" name="email" placeholder="ejemplo@hotmail.com..." type="text">
+        <br>
+        <label for="Sexo">Sexo</label>
+        <ul>
+            <li>
+                <input id="Sexo" name="Sexo" value="Hombre" type="checkbox">
+                <label>Hombre</label>
+            </li>
+            <li>
+                <input id="Sexo" name="Sexo" value="Mujer" type="checkbox">
+                <label>Mujer</label>
+            </li>
+            <li>
+                <input id="Sexo" name="Sexo" value="Otro" type="checkbox">
+                <label>Otro</label>
+            </li>
+        </ul>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+        
+    </form>
+
+</body>
+</html>
