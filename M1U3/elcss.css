@@ -1,0 +1,25 @@
+p{
+    color: blue;
+}
+
+h1{
+    color: brown;
+    background-color: blue;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+h2{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    text-align: center;
+    border: 2px solid black;
+}
