@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+.contenedor-de-img{
+    text-align: center;
+}
+body{
+    background-color: #FFE3C6;
+    font-family: 'lucida sans';
+}
+/* tabla generada en https://divtable.com/table-styler/ */
+div.cinereousTable {
+    border: 6px solid #948473;
+    background-color: #FFE3C6;
+    width: 100%;
+    text-align: center;
+  }
+  .divTable.cinereousTable .divTableCell, .divTable.cinereousTable .divTableHead {
+    width: 33%;
+    border: 1px solid #948473;
+    padding: 4px 4px;
+  }
+  .divTable.cinereousTable .divTableBody .divTableCell {
+    font-size: 17px;
+  }
+  .cinereousTable .tableFootStyle {
+    font-size: 16px;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
+  .box-form{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    /* boxsizing borde box ajusta permanente el tamaño de la caja */
+    background-color: #FFE3C6;
+    text-align: left;
+    border: 5px solid gray;
+    padding: 70px;
+  }
