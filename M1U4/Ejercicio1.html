@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ejercicio1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+            const distancia = prompt('Ingrese distancia', '')
+
+            if (distancia <= 1000) {
+                document.write('Podes ir a pata');
+            } else if (distancia <= 10000) {
+                document.write('podes ir en bici');
+            } else if (distancia <= 30000) {
+                document.write('tendrias que ir en cole');
+            } else if (distancia <= 100000) {
+                document.write('seria mucho mas comodo ir en auto');
+            } else {
+                document.write('no queda otra que ir en avion');
+            }
+        </script>
+    </body>
+</html>
