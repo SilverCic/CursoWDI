@@ -14,7 +14,6 @@ h1, h2 {
 
     background: url(../images/premier_background.jpg) no-repeat;
     background-size: cover;
-    /* min-height: 800px; */
     height: 100%;
     color: white;
 }
@@ -82,7 +81,7 @@ h1, h2 {
 }
 
 .mapa iframe {
-    width: 30%;
+    width: 80%;
     aspect-ratio: 1.2;
 }
 
@@ -92,3 +91,75 @@ html {
 .scroll_section {
     scroll-margin-top: 60px ;
 }
+
+.mapa-united {
+    background: url(../images/background-united.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff;  
+} 
+
+.mapa-city {
+    background: url(../images/background-city.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff; 
+}
+
+.mapa-arsenal {
+    background: url(../images/background-arsenal.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff;
+}
+.mapa-chelsea {
+    background: url(../images/background-chelsea.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff;
+}
+
+.mapa-liverpool {
+    background: url(../images/background-liverpool.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff;
+}
+
+.mapa-tott {
+    background: url(../images/background-tott.jpg) no-repeat;
+    background-size:  cover;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #fffefe,
+    -1px 1px 0 #fffefe,
+    1px 1px 0 #ffffff; 
+}
+
