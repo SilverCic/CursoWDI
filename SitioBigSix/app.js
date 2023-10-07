@@ -8,6 +8,8 @@ var session = require('express-session');
 
 
 require('dotenv').config();
+var pool = require('./models/db');
+
 
 var inicioRouter = require('./routes/inicio');
 var indexRouter = require('./routes/index');
@@ -58,6 +60,11 @@ app.get('/salir' , function (req, res) {
   req.session.destroy();
   res.redirect('/');
 });
+
+pool.query('select * from equipos').then(function
+  (resultados) {
+    console.log(resultados)
+  });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
