@@ -4,16 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var session = require('express-session');
+// var session = require('express-session');
 
 
 require('dotenv').config();
-var pool = require('./models/db');
+var session = require('express-session');
+// var pool = require('./models/db');
 
 
-var inicioRouter = require('./routes/inicio');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login')
 
 var app = express();
 
@@ -22,10 +24,23 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(session({
-  secret: 'inserte clave aqui',
+  secret: '12w45qe1qe4q1eq54eq5',
   resave: false,
   saveUninitialized: true
 }));
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_users);
+    if (req.session.id_users) {
+      next();
+    } else {
+      res.redirect('/admin/login')
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -33,9 +48,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', inicioRouter);
-app.use('/users', usersRouter);
-app.use('/index', indexRouter);
+
+
+app.use('/', indexRouter);
+app.use('/users', secured, usersRouter);
+app.use('/admin/login', loginRouter);
 
 app.get('/' , function (req, res) {
   var conocido = Boolean(req.session.nombre);
@@ -61,10 +78,10 @@ app.get('/salir' , function (req, res) {
   res.redirect('/');
 });
 
-pool.query('select * from equipos').then(function
-  (resultados) {
-    console.log(resultados)
-  });
+// pool.query('select * from equipos').then(function
+//   (resultados) {
+//     console.log(resultados)
+//   });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
