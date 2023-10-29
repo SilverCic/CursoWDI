@@ -1,0 +1,27 @@
+<div class="container" style="margin: 100px;">
+    <div class="row">
+        <div class="col">
+            <form action="/admin/login" method="post">
+                <div class="form-group">
+                    <label for="user">User</label>
+                    <input type="text" class="form-control"
+                    id="user" aria-describedby="emailHelp"
+                    name="user">
+
+                </div>
+                <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password"
+                        class="form-control" id="password"
+                        name="password">
+                </div>
+
+                <button type="submit" class="btn
+                btn-primary">Send</button>
+            </form>
+            {{#if error}}
+            <p>unknown user</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
