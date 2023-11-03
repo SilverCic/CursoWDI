@@ -163,3 +163,12 @@ html {
     1px 1px 0 #ffffff; 
 }
 
+.novedades_titulo {
+    background-color: rgba(0);
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    transition: all .2s ease-in-out;
+    display: block;
+}
