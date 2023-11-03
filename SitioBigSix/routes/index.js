@@ -1,11 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var novedadesModel = require('../models/novedades_model')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Big Six prueba ' });
-});
+router.get('/', async function(req, res, next) {
+
+  var novedades = await novedadesModel.get_novedades();
+
+  res.render('index', {
+     novedades
+    });
+}); 
 
 router.post('/', async (req, res, next) => {
 

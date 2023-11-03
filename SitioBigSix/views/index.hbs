@@ -16,14 +16,35 @@
         <!-- <div class="row my-3 rowdenovedadesycar"> -->
         <div id="novedades" class="col-md-3 offset-md-6 ">
             <!-- <div id="novedades" class="col-md-2 offset-md-2 py-3"></div> -->
-            <h2>Novedades</h2>
+            <a href="/admin/novedades" class="novedades_titulo">Novedades</a>
             <ul class="lista-novedades">
-                <li><a href="#"><img src="images/logo-novedades.png"> Novedad 1</a></li>
-                <li><a href="#"><img src="images/logo-novedades.png"> Novedad 2</a></li>
-                <li><a href="#"><img src="images/logo-novedades.png"> Novedad 3</a></li>
-                <li><a href="#"><img src="images/logo-novedades.png"> Novedad 4</a></li>
+                {{#each novedades}}
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id_novedades}}">
+                    <img src="images/logo-novedades.png">{{titulo}}</a>
+                    </li>
+                    {{/each}}
             </ul>
         </div>
+                        {{!-- CIERRA NOVEDADES --}}
+                        {{!-- INICIA MODAL --}}
+        {{#each novedades}}
+        <div class="modal fade" id="Modal{{id_novedades}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>{{subtitulo}}</h5>
+                            <p>{{cuerpo}}</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        {{/each}}
+    
         <div id="equipos" class="carousel slide tamañocarousel col-md-3 scroll_section" data-bs-ride="true">
             <!-- <div id="carouselExampleIndicators" class="carousel slide tamañocarousel col-md-4 offset-md-1 py-3"></div> -->
             <div class="carousel-indicators">
